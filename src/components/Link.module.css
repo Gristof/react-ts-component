@@ -1,0 +1,48 @@
+.link {
+	--variant: transparent;
+	--fill: transparent;
+	display: flex;
+	align-items: center;
+	gap: var(--space-sm);
+	font-size: var(--fs-300);
+	line-height: var(--lh-1);
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: var(--variant);
+	border-radius: var(--round-sm);
+	background-color: var(--fill);
+	color: var(--variant);
+	transition: all 400ms var(--bezier);
+}
+
+svg {
+	height: var(--fs-300);
+	transition: all 400ms var(--bezier);
+}
+
+.link:hover svg {
+	transform: translateX(3px);
+}
+
+.link {
+	outline-color: transparent;
+}
+
+.link:is(:hover, :focus-visible) {
+	box-shadow: 0 0 0 0.1em hsl(var(--bkg)), 0 0 0 0.2em var(--variant);
+}
+
+.primary {
+	--variant: hsl(var(--accent));
+}
+
+.secondary {
+	--variant: hsl(var(--accent2));
+}
+
+.filled {
+	--fill: var(--variant);
+	color: hsl(var(--bkg));
+}

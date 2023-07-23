@@ -1,0 +1,16 @@
+.card {
+	flex: 1 1 30ch;
+	position: relative;
+	background-color: hsl(var(--bkg));
+}
+
+.image {
+	width: 100%;
+	max-width: 100%;
+	aspect-ratio: 16/12;
+	object-fit: cover;
+	border-radius: var(--round-md);
+}
+
+.indicator {
+}
