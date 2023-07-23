@@ -14,6 +14,7 @@ interface CardProps {
 	body: string;
 	link: LinkProps;
 }
+
 export const Card = ({ body, link, title, badge, image, indicator, subtitle }: CardProps) => {
 	return (
 		<article className={`stack-lg ${styles.card}`}>
